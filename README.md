@@ -6,44 +6,6 @@ This project implements an encoder-decoder architecture:
 - **Encoder**: Diffusion-Aware Transformer (DAT) for learning graph representations
 - **Decoder**: Decision Transformer (DT) for sequential decision-making
 
-The model learns to select seed nodes conditioned on the target spread and budget, enabling personalized influence maximization strategies.
-
-## Architecture
-
-### Encoder: Graph Representation Learning
-
-1. **Graph Attention Network (GAT)**: Initial node feature transformation
-2. **Laplacian Positional Encoding**: Adds structural information to node embeddings
-3. **Graph Transformer Layers**: Multi-layer message passing with attention mechanisms
-4. **Output**: Node embeddings `h`, edge embeddings `e`, and edge indices
-
-**Key Files**:
-- `Encoder/main.py`: Graph encoding pipeline
-- `Encoder/DAT/models.py`: GraphTransformerNet implementation
-
-### Decoder: Sequential Decision Making
-
-The decoder uses either:
-
-1. **Decision Transformer (DT)**: GPT based architecture that models sequences of (Return-to-Go, State, Action) tuples
-
-**Key Features**:
-- **Return-to-Go (RTG)**: Personalized conditioning mechanism
-  - Initial RTG = Target Spread (TS)
-  - Updated during episode: `RTG_t = RTG_{t-1} - reward_t`
-- **State Representation**: Binary vector of size `N` (number of nodes), where `1` indicates selected node
-- **Action Representation**: Probability distribution over nodes (softmax output)
-
-**Key Files**:
-- `Decoder/dt/models/decision_transformer1.py`: Decision Transformer implementation
-- `Decoder/dt/evaluation/evaluate_episodes.py`: Evaluation functions
-
-### Environment: Influence Simulation
-
-**Key Files**:
-- `Decoder/dt/evaluation/environment.py`: Environment class
-- `Decoder/utils/graph_utils.py`: Influence computation utilities
-
 ## Installation
 
 ### Prerequisites
