@@ -1,4 +1,3 @@
-=======
 # Personalized Influence Maximization (PIM) 
 
 ## Overview
