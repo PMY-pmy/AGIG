@@ -3,11 +3,6 @@
 
 ## Overview
 
-The Personalized Influence Maximization (PIM) problem aims to select a set of seed nodes in a social network that maximizes information spread, given:
-- **Graph (G)**: The social network structure
-- **Target Spread (TS)**: The desired influence spread goal
-- **Budget (B)**: The maximum number of seed nodes to select
-
 This project implements an encoder-decoder architecture:
 - **Encoder**: Diffusion-Aware Transformer (DAT) for learning graph representations
 - **Decoder**: Decision Transformer (DT) for sequential decision-making
@@ -324,10 +319,6 @@ This will train models for:
 
 **Output**: Results are written to `{dataset}_{method}_{budget}_output.txt` files in the root directory.
 
-### Evaluation Only
-
-To evaluate a trained model, modify the code to load a checkpoint and set `max_iters=0` or use the evaluation functions directly.
-
 ## Training and Evaluation
 
 ### Training Process
@@ -399,8 +390,6 @@ AGIG/
 │   │   ├── models.py                # Alternative GraphTransformerNet
 │   │   └── layers.py                # Graph transformer layers
 │   └── Data/                        # Graph data files (for testing)
-│       ├── graph.txt
-│       ├── graph1.txt
 │       └── twitter/                 # Twitter dataset (if available)
 │
 ├── Decoder/                         # Sequential decision module
@@ -419,15 +408,9 @@ AGIG/
 │   ├── utils/
 │   │   └── graph_utils.py           # Graph utilities and influence computation
 │   └── data/                        # Dataset files (REQUIRED)
-│       ├── cora/
-│       │   ├── cora.SG              # Graph file
-│       │   └── cora-{method}-{budget}.pkl  # Trajectory files
-│       ├── citeseer/
+│       ├── citeseer/             
 │       ├── jazz/
-│       ├── fb_food/
 │       ├── fb_tvshow/
-│       ├── friendster/
-│       ├── network/
 │       ├── wiki/
 │       └── youtube/
 │
@@ -520,4 +503,3 @@ time/evaluation: 12.5
 ================================================================================
 ```
 
->>>>>>> fec4b1f (Initial commit)
