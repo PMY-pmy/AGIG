@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs / outputs
+logs/
+runs/
+wandb/
+outputs/
+checkpoints/
+
+# Large artifacts (按需要调整)
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Data (科研项目一般不要上传原始数据)
+data/
+<<<<<<< HEAD
+# 忽略模型权重和缓存文件
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+*.npz
+ 
+# 忽略 tokenizer 和模型文件夹
+model/
+params/
+ 
+# 忽略数据集缓存
+data/ChnSentiCorp/
+data/Weibo/
+*.arrow
+*.csv
+*.json
+ 
+# 忽略 pycache
+__pycache__/
+=======
+# 忽略模型权重和缓存文件
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+*.npz
+ 
+# 忽略 tokenizer 和模型文件夹
+model/
+params/
+ 
+# 忽略数据集缓存
+data/ChnSentiCorp/
+data/Weibo/
+*.arrow
+*.csv
+*.json
+ 
+# 忽略 pycache
+__pycache__/
+>>>>>>> fec4b1f (Initial commit)

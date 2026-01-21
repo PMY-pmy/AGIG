@@ -1,0 +1,97 @@
+<<<<<<< HEAD
+# Core Dependencies for Personalized Influence Maximization (PIM)
+# Python 3.8.5 is required
+
+# Deep Learning Framework
+torch==1.8.1
+torchvision==0.9.1  # Optional, for some utilities
+torchaudio==0.8.1   # Optional, for some utilities
+
+# Graph Neural Networks
+torch-geometric>=1.7.0
+# Note: torch-geometric requires additional dependencies:
+# - torch-scatter
+# - torch-sparse
+# - torch-cluster
+# - torch-spline-conv
+# Install with: pip install torch-scatter torch-sparse torch-cluster torch-spline-conv -f https://data.pyg.org/whl/torch-1.8.1+cu102.html
+
+# Transformers (for GPT-2 base in Decision Transformer)
+transformers==4.5.1
+
+# Scientific Computing
+numpy==1.20.3
+scipy>=1.7.0
+
+# Graph Utilities
+networkx>=2.6
+
+# Standard Library (included for reference)
+# argparse - built-in
+# pickle - built-in
+# random - built-in
+# contextlib - built-in
+# collections - built-in
+# multiprocessing - built-in
+# statistics - built-in
+# time - built-in
+# os - built-in
+# json - built-in
+
+# Optional Dependencies
+# wandb==0.9.1  # For experiment tracking (optional)
+# matplotlib>=3.3.0  # For visualization (optional)
+# tqdm>=4.60.0  # For progress bars (optional)
+
+# Note: For CUDA support, install PyTorch with CUDA 10.2:
+# pip install torch==1.8.1+cu102 torchvision==0.9.1+cu102 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+
+=======
+# Core Dependencies for Personalized Influence Maximization (PIM)
+# Python 3.8.5 is required
+
+# Deep Learning Framework
+torch==1.8.1
+torchvision==0.9.1  # Optional, for some utilities
+torchaudio==0.8.1   # Optional, for some utilities
+
+# Graph Neural Networks
+torch-geometric>=1.7.0
+# Note: torch-geometric requires additional dependencies:
+# - torch-scatter
+# - torch-sparse
+# - torch-cluster
+# - torch-spline-conv
+# Install with: pip install torch-scatter torch-sparse torch-cluster torch-spline-conv -f https://data.pyg.org/whl/torch-1.8.1+cu102.html
+
+# Transformers (for GPT-2 base in Decision Transformer)
+transformers==4.5.1
+
+# Scientific Computing
+numpy==1.20.3
+scipy>=1.7.0
+
+# Graph Utilities
+networkx>=2.6
+
+# Standard Library (included for reference)
+# argparse - built-in
+# pickle - built-in
+# random - built-in
+# contextlib - built-in
+# collections - built-in
+# multiprocessing - built-in
+# statistics - built-in
+# time - built-in
+# os - built-in
+# json - built-in
+
+# Optional Dependencies
+# wandb==0.9.1  # For experiment tracking (optional)
+# matplotlib>=3.3.0  # For visualization (optional)
+# tqdm>=4.60.0  # For progress bars (optional)
+
+# Note: For CUDA support, install PyTorch with CUDA 10.2:
+# pip install torch==1.8.1+cu102 torchvision==0.9.1+cu102 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+
+>>>>>>> fec4b1f (Initial commit)
