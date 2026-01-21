@@ -301,7 +301,7 @@ This will train models for:
    - Predict next action
 
 4. **Loss Computation**:
-   - MSE loss between predicted and target actions
+   - Loss between predicted and target actions
    - Apply attention mask to filter padding
    - Backpropagate and update parameters
 
